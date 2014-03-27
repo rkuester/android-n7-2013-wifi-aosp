@@ -1,0 +1,12 @@
+Source: android-n7-2013-wifi-aosp
+Section: unknown
+Priority: extra
+Maintainer: Ryan Kuester <rkuester@insymbols.com>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.3
+
+Package: android-n7-2013-wifi-aosp
+Architecture: all
+Depends: ${misc:Depends}
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>
