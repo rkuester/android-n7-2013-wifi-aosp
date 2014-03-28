@@ -1,0 +1,9 @@
+#!/bin/sh
+#
+# Set the Android hostname to the kernel hostname via the local
+# properties file.
+
+local=/android/data/local.prop
+
+test -w $local && sed -i '/^net\.hostname=/d' $local
+echo "net.hostname=$(hostname)" >>$local

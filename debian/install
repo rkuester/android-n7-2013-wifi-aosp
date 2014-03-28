@@ -1,0 +1,2 @@
+android-hostname /usr/sbin
+android-hostname.service /lib/systemd/system

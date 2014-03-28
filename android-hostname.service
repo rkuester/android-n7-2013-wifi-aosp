@@ -1,0 +1,10 @@
+[Unit]
+Description=Set Android's hostname property to the kernel's hostname
+Before=android.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/sbin/android-hostname
+
+[Install]
+WantedBy=android.service
