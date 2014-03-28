@@ -1,4 +1,22 @@
 #!/usr/bin/make -f
 
+PKG=android-n7-2013-wifi-aosp
+DESTDIR=debian/$(PKG)
+
 %:
 	dh $@ 
+
+override_dh_auto_install:
+	cp -a android $(DESTDIR)
+	(cd $(DESTDIR) && ../../restore-meta.sh <../../android.metadata)
+	mkdir -p $(DESTDIR)/usr/share/$(PKG)
+	gzip -9 <android.metadata \
+	        >$(DESTDIR)/usr/share/$(PKG)/android.metadata.gz
+
+override_dh_strip:
+override_dh_makeshlibs:
+override_dh_shlibdeps:
+	# pass
+
+override_dh_fixperms:
+	dh_fixperms --exclude /android
