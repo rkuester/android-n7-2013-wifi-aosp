@@ -1,2 +1,3 @@
 android-hostname /usr/sbin
 android-hostname.service /lib/systemd/system
+generate-resolvconf /android/system/bin

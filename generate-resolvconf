@@ -1,0 +1,2 @@
+#!/system/bin/sh
+echo nameserver `getprop net.dns1` >/data/resolv.conf
