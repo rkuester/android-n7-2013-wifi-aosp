@@ -1,1 +1,2 @@
 android/data/resolv.conf etc/resolv.conf
+dev/null etc/udev/rules.d/50-firmware.rules
