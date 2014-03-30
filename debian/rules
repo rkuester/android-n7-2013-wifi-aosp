@@ -4,7 +4,7 @@ PKG=android-n7-2013-wifi-aosp
 DESTDIR=debian/$(PKG)
 
 %:
-	dh $@ 
+	dh $@ --with systemd
 
 override_dh_auto_install:
 	cp -a android $(DESTDIR)

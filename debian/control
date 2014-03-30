@@ -2,7 +2,7 @@ Source: android-n7-2013-wifi-aosp
 Section: android
 Priority: extra
 Maintainer: Ryan Kuester <rkuester@insymbols.com>
-Build-Depends: debhelper (>= 8.0.0)
+Build-Depends: debhelper (>= 8.0.0), dh-systemd (>= 1.5)
 Standards-Version: 3.9.3
 
 Package: android-n7-2013-wifi-aosp
